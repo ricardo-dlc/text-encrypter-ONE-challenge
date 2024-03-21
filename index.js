@@ -16,6 +16,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const result = document.getElementById('encryption-result');
     const textArea = document.getElementById('text-to-encrypt');
 
+    const copyContent = async () => {
+        try {
+            await navigator.clipboard.writeText(result.innerHTML);
+            console.log('Content copied to clipboard');
+        } catch (err) {
+            console.error('Failed to copy: ', err);
+        }
+    }
+
     const encrypt = () => {
         const textToEncrypt = textArea.value;
 
@@ -43,6 +52,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById('encrypt-button').addEventListener('click', encrypt);
     document.getElementById('decrypt-button').addEventListener('click', decrypt);
+    document.getElementById('copy-to-clipboard').addEventListener('click', copyContent);
 });
-
-
