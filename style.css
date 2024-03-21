@@ -21,7 +21,10 @@ main {
 }
 
 .container {
-    /* display: flex; */
+    display: flex;
+}
+
+.text-input {
     padding: 40px;
 }
 

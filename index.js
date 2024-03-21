@@ -36,6 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
         textArea.value = '';
 
         result.innerHTML = encryptedText;
+
+        document.getElementById('text-result').classList.remove('hidden');
+        document.getElementById('no-ecrypted-text').classList.add('hidden');
     }
 
     const decrypt = () => {
