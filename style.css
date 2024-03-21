@@ -1,0 +1,54 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+body {
+    background: #F3F5FC;
+    padding: 40px;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+main {
+    display: flex;
+}
+
+.container {
+    /* display: flex; */
+    padding: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+textarea {
+    border: none;
+    resize: none;
+    background: #F3F5FC;
+    font-size: 32px;
+    text-align: left;
+    color: #0A3871;
+    outline: none;
+}
+
+.encryption-result-content {
+    background: #FFFFFF;
+    border-radius: 32px;
+    padding: 40px;
+}
+
+button[type=button] {
+    width: 328px;
+    padding: 24px;
+    gap: 8px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+}
